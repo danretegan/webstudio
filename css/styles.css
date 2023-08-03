@@ -866,3 +866,28 @@ a {
 .send-button:focus {
   background-color: #188ce8;
 }
+
+
+
+/* Tablet Design */
+
+@media screen and (min-width: lățime-tabletă) {
+  .element {
+    /* Stiluri tabletă */
+  }
+}
+
+
+
+/* Desktop Design */
+
+@media screen and (min-width: lățime-desktop) {
+  .element {
+    /* Stiluri desktop */
+  }
+}
+
+
+
+
+
