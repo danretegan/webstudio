@@ -29,18 +29,47 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 /* Container general */
 
-.container {
+.no-scroll {
+  overflow: hidden;
+}
+
+/* .container {
   margin: 0 auto;
   max-width: 1600px;
+} */
+
+.container {
+  margin: 0 auto;
+  /* padding: 0 15px; */
+  /* width: 100%; */
+  width: 1600px;
 }
+
+/* @media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+} */
 
 .section94px {
   margin: 0 auto;
@@ -51,18 +80,33 @@ a {
 /* Header Section */
 
 .header {
-  background-color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ececec;
-  margin: 0 auto;
   position: relative;
+  width: 1600px;
+}
+
+.header-container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .header-text {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: 93px;
+}
+
+
+
+.logo-title {
+  margin: 0;
+  padding: 0;
 }
 
 .logo span {
@@ -81,9 +125,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.19;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  
   text-decoration-line: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -101,7 +143,7 @@ a {
 .active-page::after {
   background-color: var(--webstudio-color);
   border-radius: 2px;
-  bottom: -23px;
+  bottom: -32px;
   content: "";
   height: 4px;
   left: 0;
@@ -114,16 +156,14 @@ a {
   color: var(--webstudio-color);
 }
 
-.navigation {
-  align-items: baseline;
-  display: flex;
-}
+
 
 .navigation-links {
   display: flex;
   gap: 50px;
-  margin-left: 93px;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -137,6 +177,7 @@ a {
 }
 
 .contacts {
+  padding: 0;
   display: flex;
   gap: 40px;
 }
@@ -157,6 +198,7 @@ a {
   align-items: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/desktop/Hero_img.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 600px;
@@ -165,9 +207,15 @@ a {
 }
 
 @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))),
+     url("../images/desktop/Hero_img@2x.jpg");
+    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url("../images/desktop/Hero_img@2x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url("../images/desktop/Hero_img@2x.jpg");
   }
@@ -288,7 +336,7 @@ a {
 .overlay-text {
   align-items: center;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 5px;
+  bottom: 0;
   color: #fff;
   display: flex;
   font-family: var(--webstudio-font-family);
@@ -403,15 +451,16 @@ a {
 
 .footer {
   background-color: var(--background);
+   width: 1600px;
 }
 
 .footer-text {
   align-items: baseline;
   display: flex;
   gap: 93px;
-  margin: 0 auto;
-  max-width: 1170px;
   padding: 60px 0 60px 0;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .logo-footer span {
@@ -600,6 +649,7 @@ a {
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
+  padding: 0;
 }
 
 .filter-button {
@@ -626,12 +676,11 @@ a {
 
 .photo-section {
   display: flex;
-  flex-basis: calc((100% - 30) / 3);
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
   padding: 0;
+  margin-left: -30px;
 }
 
 .box-overlay {
@@ -706,6 +755,7 @@ a {
 }
 
 .is-hidden {
+  pointer-events: none;
   visibility: hidden;
   transform: scale(1.05);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -880,4 +930,21 @@ a {
 .send-button:hover,
 .send-button:focus {
   background-color: #188ce8;
+}
+
+
+
+/* Tablet Design */
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+
+/* Desktop Design */
+
+@media screen and (min-width: 1158px) {
+ 
 }
