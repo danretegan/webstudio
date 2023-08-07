@@ -15,24 +15,127 @@
   </head>
 
   <body>
-       <!-- Header Section -->
+    <!-- Menu Container Section -->
 
-       <header class="header container">
-        <div class="header-container">
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <nav class="">
+        <ul class="drawer-nav">
+          <li>
+            <a href="index.html" class="drawer-nav-page">Studio</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="drawer-nav-page">Portfolio</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="drawer-nav-page">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="drawer-contacts">
+        <li>
+          <a href="tel:+12127724150" class="drawer-phone">+1 212-772-4150</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="drawer-email"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="drawer-social-links">
+        <li class="">
+          <a
+            href="https://www.instagram.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Instagram"
+            >Instagram
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./images/icons.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://twitter.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Twitter"
+            >Twitter
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./images/icons.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://www.facebook.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./images/icons.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://www.linkedin.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Linkedin"
+            >Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Header Section -->
+
+    <header class="header container">
+      <div class="header-container">
         <h1 class="logo-title">
           <a href="index.html" class="logo active"><span>Web</span>Studio</a>
         </h1>
-  
+
         <div class="header-text">
           <nav class="navigation">
             <ul class="navigation-links">
               <li>
-                <a href="index.html" class="navigation-link active"
+                <a href="index.html" class="navigation-link active-page active"
                   >Studio</a
                 >
               </li>
               <li>
-                <a href="portfolio.html" class="navigation-link active-page active"
+                <a href="portfolio.html" class="navigation-link active"
                   >Portfolio</a
                 >
               </li>
@@ -43,7 +146,7 @@
               </li>
             </ul>
           </nav>
-  
+
           <ul class="contacts">
             <li class="active">
               <svg width="16px" height="10px">
@@ -63,9 +166,13 @@
             </li>
           </ul>
         </div>
-        
+        <button class="menu-button js-open-menu">
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      </header>
+    </header>
 
     <!-- Buttons List Section-->
 
@@ -86,7 +193,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img1.jpg 1x, images/desktop/portfolio/img1@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img1.jpg    1x,
+                  images/desktop/portfolio/img1@2x.jpg 2x
+                "
                 src="./images/desktop/portfolio/img1.jpg"
                 alt="open laptop with a website page"
                 width="370"
@@ -111,7 +221,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img2.jpg 1x, images/desktop/portfolio/img2@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img2.jpg    1x,
+                  images/desktop/portfolio/img2@2x.jpg 2x
+                "
                 src="./images/portfolio/img2.jpg"
                 alt="basketball poster"
                 width="370"
@@ -136,7 +249,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img3.jpg 1x, images/desktop/portfolio/img3@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img3.jpg    1x,
+                  images/desktop/portfolio/img3@2x.jpg 2x
+                "
                 src="./images/portfolio/img3.jpg"
                 alt="Seafod restaurant logo"
                 width="370"
@@ -161,7 +277,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img4.jpg 1x, images/desktop/portfolio/img4@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img4.jpg    1x,
+                  images/desktop/portfolio/img4@2x.jpg 2x
+                "
                 src="./images/portfolio/img4.jpg"
                 alt="Headphones"
                 width="370"
@@ -186,7 +305,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img5.jpg 1x, images/desktop/portfolio/img5@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img5.jpg    1x,
+                  images/desktop/portfolio/img5@2x.jpg 2x
+                "
                 src="./images/portfolio/img5.jpg"
                 alt="2 cardboard boxes"
                 width="370"
@@ -211,7 +333,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img6.jpg 1x, images/desktop/portfolio/img6@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img6.jpg    1x,
+                  images/desktop/portfolio/img6@2x.jpg 2x
+                "
                 src="./images/portfolio/img6.jpg"
                 alt="Apple monitor"
                 width="370"
@@ -236,7 +361,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img7.jpg 1x, images/desktop/portfolio/img7@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img7.jpg    1x,
+                  images/desktop/portfolio/img7@2x.jpg 2x
+                "
                 src="./images/portfolio/img7.jpg"
                 alt="open brochure"
                 width="370"
@@ -261,7 +389,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img8.jpg 1x, images/desktop/portfolio/img8@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img8.jpg    1x,
+                  images/desktop/portfolio/img8@2x.jpg 2x
+                "
                 src="./images/portfolio/img8.jpg"
                 alt="cardboard tag"
                 width="370"
@@ -286,7 +417,10 @@
             <div class="box-overlay">
               <img
                 class="photo"
-                srcset="images/desktop/portfolio/img9.jpg 1x, images/desktop/portfolio/img9@2x.jpg 2x"
+                srcset="
+                  images/desktop/portfolio/img9.jpg    1x,
+                  images/desktop/portfolio/img9@2x.jpg 2x
+                "
                 src="./images/portfolio/img9.jpg"
                 alt="hands working on laptop"
                 width="370"
@@ -313,88 +447,94 @@
 
     <footer class="footer container">
       <section class="footer-text">
-        <section class="footer-adress-contacts">
-          <h2 class="blue-first-three">
-            <a class="logo-footer active" href="index.html">
-              <span>Web</span>Studio</a
-            >
-          </h2>
-          <ul class="contacts-footer">
-            <li>
-              <address class="address">695 Park Ave, NY 10065, USA</address>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact-footer active"
-                >info@devstudio.com</a
+        <section class="footer-text-gap">
+          <section class="footer-adress-contacts">
+            <h2 class="logo-title">
+              <a class="logo-footer active" href="index.html">
+                <span>Web</span>Studio</a
               >
-            </li>
-            <li>
-              <a href="tel:+12127724150" class="contact-footer active"
-                >+1 212-772-4150</a
-              >
-            </li>
-          </ul>
-        </section>
-        <!-- Find us on Section -->
-        <section class="center-column">
-          <h3 class="find-us-on-text">Find us on</h3>
+            </h2>
+            <ul class="contacts-footer">
+              <li>
+                <address class="address">695 Park Ave, NY 10065, USA</address>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-footer active"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+12127724150" class="contact-footer active"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </section>
+          <!-- Find us on Sectoin -->
+          <section class="center-column">
+            <h3 class="find-us-on-text">Find us on</h3>
 
-          <ul class="footer-icons-list">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                class="icon-footer"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/"
-                class="icon-footer"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                class="icon-footer"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                class="icon-footer"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Linkedin"
-              >
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <ul class="footer-icons-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Linkedin"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
         </section>
+
         <!-- Subscribe Section -->
+
         <form class="subscribe">
           <label class="subscribe-label" for="subscribe-email">
             Subscribe to the newsletter</label
@@ -418,5 +558,8 @@
         </form>
       </section>
     </footer>
+
+    <!-- Plasăm înainte de tag-ul de închidere body  -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
