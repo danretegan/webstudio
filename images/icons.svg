@@ -136,5 +136,14 @@
         d="M6.4 15.36l-0.32-0.32-3.2 2.88v0.32l11.2 10.88h0.32l24.32-23.040v-0.32l-3.2-2.88-21.12 20.16-8-7.68z"></path>
     </symbol>
 
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path d="M6.4 11.76v-2.16h19.2v2.16h-19.2zM6.4 17.040h19.2v-2.080h-19.2v2.080zM6.4 22.4h19.2v-2.16h-19.2v2.16z">
+      </path>
+    </symbol>
+
+    <symbol id="icon-line" viewBox="0 0 1 32">
+      <path fill="currentColor" d="M0 0v32h1.455v-32z"></path>
+    </symbol>
+
   </defs>
 </svg>
