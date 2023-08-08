@@ -723,6 +723,7 @@ img {
   border-color: #188ce8;
 }
 
+/* ------------------------------------------------- */
 /* Portfolio Page*/
 
 .filter-button {
@@ -753,10 +754,12 @@ img {
 
 .filter-button-set {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
   padding: 0;
+  margin: 0 0 40px 15px;
+  width: 289px;
 }
 
 .filter-button {
@@ -1200,7 +1203,38 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 450px;
   }
+
+/* ----------------------------------------------- */
+  /* Portfolio Page Section */
+ 
+  .filter-button-set {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 768px;
+  }
+  
+  /* Photo Section */
+
+.photo-container {
+  width: 1170px;
+  margin: 0 auto;
 }
+
+.photo-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  padding: 0;
+}
+
+
+}
+
 
 /* Desktop Design Section */
 
@@ -1403,6 +1437,17 @@ img {
     padding-left: 16px;
     width: 358px;
   }
+
+  /* ---------------------------------------- */
+  /* Portfolio Page Section */
+
+  .filter-button-set {
+    margin-bottom: 50px;
+    width: 1158px;
+  }
+
+
+
+
 }
 
-/* Portfolio Page Section */
