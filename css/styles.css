@@ -1200,207 +1200,209 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 450px;
   }
+}
 
-  /* Desktop Design Section */
+/* Desktop Design Section */
 
-  @media screen and (min-width: 1158px) {
-    .container {
-      margin: 0 auto;
-      width: 1600px;
-    }
-    .section94px {
-      margin: 94px 0;
-    }
+@media screen and (min-width: 1158px) {
+  .container {
+    margin: 0 auto;
+    width: 1600px;
+  }
+  .section94px {
+    margin: 94px 0;
+  }
 
-    /* Header Section */
+  /* Header Section */
 
-    .header {
-      width: 100%;
-    }
-    .header-container {
-      width: 1170px;
-    }
-    .header-text {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin-left: 93px;
-      width: 100%;
-    }
-    .contacts {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      font-size: 14px;
-      gap: 40px;
-      letter-spacing: 0.28px;
-      margin: 0;
-    }
-    .logo span {
-      font-size: 26px;
-    }
-    .logo {
-      font-size: 26px;
-    }
+  .header {
+    width: 100%;
+  }
+  .header-container {
+    width: 1170px;
+  }
+  .header-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 93px;
+    width: 100%;
+  }
+  .contacts {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 40px;
+    letter-spacing: 0.28px;
+    margin: 0;
+  }
+  .logo span {
+    font-size: 26px;
+  }
+  .logo {
+    font-size: 26px;
+  }
 
-    /* Hero Section */
+  /* Hero Section */
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/Hero_img.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    width: 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+        ),
+        url("../images/desktop/Hero_img@2x.jpg");
+      background-image: -o-linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/desktop/Hero_img@2x.jpg");
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/desktop/Hero_img.jpg");
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      height: 600px;
-      justify-content: center;
-      width: 100%;
-    }
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (-o-min-device-pixel-ratio: 2/1),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .hero {
-        background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(47, 48, 58, 0.4)),
-            to(rgba(47, 48, 58, 0.4))
-          ),
-          url("../images/desktop/Hero_img@2x.jpg");
-        background-image: -o-linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../images/desktop/Hero_img@2x.jpg");
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url("../images/desktop/Hero_img@2x.jpg");
-      }
-    }
-    .hero-text {
-      font-size: 44px;
-      letter-spacing: 2.64px;
-      line-height: 1.36;
-    }
-
-    /* ATTENTION TO DETAILS advertising Section*/
-    .big-icons-list {
-      width: 1170px;
-    }
-    .big-icon-area {
-      width: 270px;
-    }
-    .advertising-title {
-      width: 270px;
-    }
-    .advertising-text {
-      width: 270px;
-    }
-
-    /* What we do Section */
-
-    .what-we-do-section {
-      display: contents;
-    }
-    .what-we-do-photos {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      padding: 0;
-    }
-    .what-we-do-item {
-      position: relative;
-    }
-    .overlay-text {
-      align-items: center;
-      background: rgba(47, 48, 58, 0.8);
-      bottom: 0;
-      color: #fff;
-      display: flex;
-      font-family: var(--webstudio-font-family);
-      font-size: 14px;
-      font-weight: 700;
-      height: 70px;
-      justify-content: center;
-      left: 0;
-      letter-spacing: 0.42px;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
-      width: 100%;
-    }
-
-    /* Our Team Section*/
-
-    .title {
-      font-size: 36px;
-      letter-spacing: 1.08px;
-      margin: 94px 0 50px 0;
-    }
-    .photo-list {
-      margin: 0 auto;
-      width: 1170px;
-    }
-    .photo-team {
-      width: 270px;
-      height: auto;
-    }
-
-    /* Regular Customers Section */
-
-    .regular-customers-icons-list {
-      width: 1170px;
-    }
-    .regular-customers-icon-area {
-      width: 170px;
-    }
-
-    /* Footer Section */
-
-    .footer {
-      width: 100%;
-    }
-    .footer-text {
-      flex-direction: row;
-      align-items: baseline;
-      display: flex;
-      gap: 93px;
-    }
-    .footer-text-gap {
-      display: flex;
-      gap: 93px;
-    }
-    .footer-adress-contacts {
-      text-align: left;
-      margin: 0;
-    }
-    .logo-title {
-      margin: 0;
-    }
-    .find-us-on-text {
-      text-align: left;
-    }
-    .icon-footer {
-      display: flex;
-      justify-content: center;
-    }
-    .subscribe-label {
-      text-align: left;
-    }
-    .subscribe-area {
-      display: block;
-    }
-    .subscribe-input {
-      margin-right: 12px;
-      padding-left: 16px;
-      width: 358px;
+        url("../images/desktop/Hero_img@2x.jpg");
     }
   }
+  .hero-text {
+    font-size: 44px;
+    letter-spacing: 2.64px;
+    line-height: 1.36;
+  }
+
+  /* ATTENTION TO DETAILS advertising Section*/
+  .big-icons-list {
+    width: 1170px;
+  }
+  .big-icon-area {
+    width: 270px;
+  }
+  .advertising-title {
+    width: 270px;
+  }
+  .advertising-text {
+    width: 270px;
+  }
+
+  /* What we do Section */
+
+  .what-we-do-section {
+    display: contents;
+  }
+  .what-we-do-photos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 0;
+  }
+  .what-we-do-item {
+    position: relative;
+  }
+  .overlay-text {
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    font-family: var(--webstudio-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    height: 70px;
+    justify-content: center;
+    left: 0;
+    letter-spacing: 0.42px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  /* Our Team Section*/
+
+  .title {
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin: 94px 0 50px 0;
+  }
+  .photo-list {
+    margin: 0 auto;
+    width: 1170px;
+  }
+  .photo-team {
+    width: 270px;
+    height: auto;
+  }
+
+  /* Regular Customers Section */
+
+  .regular-customers-icons-list {
+    width: 1170px;
+  }
+  .regular-customers-icon-area {
+    width: 170px;
+  }
+
+  /* Footer Section */
+
+  .footer {
+    width: 100%;
+  }
+  .footer-text {
+    flex-direction: row;
+    align-items: baseline;
+    display: flex;
+    gap: 93px;
+  }
+  .footer-text-gap {
+    display: flex;
+    gap: 93px;
+  }
+  .footer-adress-contacts {
+    text-align: left;
+    margin: 0;
+  }
+  .logo-title {
+    margin: 0;
+  }
+  .find-us-on-text {
+    text-align: left;
+  }
+  .icon-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe-label {
+    text-align: left;
+  }
+  .subscribe-area {
+    display: block;
+  }
+  .subscribe-input {
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+  }
 }
+
+/* Portfolio Page Section */
