@@ -785,17 +785,21 @@ img {
 }
 
 .photo-container {
-  width: 1170px;
+  width: 480px;
   margin: 0 auto;
 }
 
 .photo-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin-right: -30px;
-  margin-bottom: -30px;
   padding: 0;
+}
+
+.photo {
+  height: auto;
+  width: 450px;
 }
 
 .box-overlay {
@@ -1210,7 +1214,6 @@ img {
   .filter-button-set {
     display: flex;
     justify-content: center;
-    padding: 0;
     margin: 0 auto;
     margin-bottom: 30px;
     width: 768px;
@@ -1218,19 +1221,19 @@ img {
   
   /* Photo Section */
 
-.photo-container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.photo-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-right: -30px;
-  margin-bottom: -30px;
-  padding: 0;
-}
+  .photo-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+    .photo-section {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+  }
+    .photo {
+    height: auto;
+    width: 354px;
+  }
 
 
 }
@@ -1446,7 +1449,21 @@ img {
     width: 1158px;
   }
 
-
+  .photo-container {
+    width: 1158px;
+    margin: 0 auto;
+  }
+    .photo-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+    .photo {
+    height: auto;
+    width: 370px;
+  }
 
 
 }
