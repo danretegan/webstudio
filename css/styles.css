@@ -649,6 +649,8 @@ img {
 .subscribe {
   display: flex;
   flex-direction: column;
+  padding: 0 15px;
+  width: 100%;
 }
 
 .subscribe-label {
@@ -679,7 +681,8 @@ img {
   padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 20px 0 20px 0;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
 }
 
 .subscribe-input:hover,
