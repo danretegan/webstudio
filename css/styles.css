@@ -436,8 +436,8 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
-  width: 480px;
+  padding: 0 15px;
+  width: 100%;
 }
 
 .photo-with-caption {
