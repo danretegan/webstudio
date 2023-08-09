@@ -376,6 +376,48 @@ img {
   display: none;
 }
 
+/* ATTENTION TO DETAILS advertising Section Mobile */
+
+.big-icons-list {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.big-icon-area {
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  margin-bottom: 30px;
+  max-width: 450px;
+  
+}
+
+.advertising-title {
+  color: var(--title-nav-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  margin: 0 0 10px 0;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advertising-text {
+  color: var(--text-contacts-color);
+  font-size: 14px;
+  max-height: 50px;
+  height: auto;
+  letter-spacing: 0.42px;
+  line-height: 1.71;
+  margin: 0 0 30px 0;
+  max-width: 450px;
+}
+
 /* Our Team Section Mobile */
 
 .title {
@@ -1358,7 +1400,7 @@ img {
   .regular-customers-icon-area {
     flex: 0 0 calc(16.66% - 25px); 
     max-width: 170px; 
-      }
+       }
 
   /* Footer Section Desktop */
 
