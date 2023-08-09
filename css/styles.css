@@ -1136,7 +1136,34 @@ img {
     }
   }
 
+  /* ATTENTION TO DETAILS advertising Tablet Section*/
   
+  .big-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 768px;
+  }
+
+
+  .big-icon-area {
+    width: 354px;
+    height: 120px;
+  }
+
+  .advertising-title {
+    text-align: left;
+  }
+
+  .advertising-text {
+    width: 354px;
+    height: 75px;
+  }
+
+
+
+
 
   /* Our Team Section Tablet */
 
