@@ -54,14 +54,10 @@ img {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 11580px) {
   .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
+    width: 11580px;
   }
 }
 
@@ -1070,8 +1066,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    margin: 0 auto;
-    width: 1157px;
+    width: 768px;
   }
   .header {
     height: 80px;
@@ -1140,7 +1135,10 @@ img {
   /* ATTENTION TO DETAILS advertising Section*/
 
   .big-icons-list {
-    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 768px;
   }
   .big-icon-area {
     width: 354px;
