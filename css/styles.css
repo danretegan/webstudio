@@ -49,17 +49,13 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+/* @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
-}
+} */
 
-@media screen and (min-width: 11580px) {
-  .container {
-    width: 11580px;
-  }
-}
+
 
 .section94px {
   margin: 60px 0;
@@ -1066,7 +1062,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+    
   }
   .header {
     height: 80px;
@@ -1134,11 +1131,15 @@ img {
 
   /* ATTENTION TO DETAILS advertising Section*/
 
+  .big-icon-section {
+    padding: 0;
+  }
   .big-icons-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 768px;
+    width: 100%;
+    justify-content: center;
   }
   .big-icon-area {
     width: 354px;
@@ -1156,7 +1157,7 @@ img {
   /* Our Team Section */
 
   .photo-list {
-    width: 768px;
+    padding: 0;
   }
   .photo-team {
     height: auto;
@@ -1172,10 +1173,15 @@ img {
   /* Regular Customers */
 
   .regular-customers-icons-list {
-    width: 768px;
-    margin-left: -30px;
-    margin-right: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 768px;
     margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    
+
   }
   .regular-customers-icon-area {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
