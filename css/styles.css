@@ -401,7 +401,7 @@ img {
   gap: 30px;
   justify-content: center;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
   width: 100%;
 }
 
@@ -489,7 +489,9 @@ img {
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 210px;
+  flex: 0 0 calc(50% - 30px); 
+  max-width: 210px; 
+
 }
 
 .regular-customers-icon-area:hover,
@@ -1054,7 +1056,7 @@ img {
     display: none;
   }
 
-  /* Hero Section */
+  /* Hero Section Tablet */
 
   .hero {
     background-image: linear-gradient(
@@ -1094,7 +1096,7 @@ img {
 
   
 
-  /* Our Team Section */
+  /* Our Team Section Tablet */
 
   .photo-list {
     padding: 0;
@@ -1111,7 +1113,7 @@ img {
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Regular Customers */
+  /* Regular Customers Tablet */
 
   .regular-customers-icons-list {
     display: flex;
@@ -1128,7 +1130,7 @@ img {
     width: 226px;
   }
 
-  /* Footer Section */
+  /* Footer Section Tablet */
 
   .footer {
     width: 100%;
@@ -1169,7 +1171,7 @@ img {
     width: 450px;
   }
 
-  /* Portfolio Page Section */
+  /* Portfolio Page Section Tablet */
 
   .filter-button-set {
     display: flex;
@@ -1179,7 +1181,7 @@ img {
     width: 768px;
   }
 
-  /* Photo Section */
+  /* Photo Section Tablet */
 
   .photo-container {
     margin: 0 auto;
@@ -1209,7 +1211,7 @@ img {
     margin: 94px 0;
   }
 
-  /* Header Section */
+  /* Header Section Desktop */
 
   .header {
 
@@ -1241,7 +1243,7 @@ img {
     font-size: 26px;
   }
 
-  /* Hero Section */
+  /* Hero Section Desktop */
 
   .hero {
     background-image: linear-gradient(
@@ -1290,7 +1292,7 @@ img {
 
   
 
-  /* What we do Section */
+  /* What we do Section Desktop */
 
   .what-we-do-section {
     display: contents;
@@ -1323,7 +1325,7 @@ img {
     width: 100%;
   }
 
-  /* Our Team Section*/
+  /* Our Team Section Desktop */
 
   .title {
     font-size: 36px;
@@ -1342,18 +1344,23 @@ img {
     width: 270px;
   }
 
-  /* Regular Customers Section */
+  /* Regular Customers Section Desktop */
 
   .regular-customers-icons-list {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
     max-width: 1158px;
   }
-  .regular-customers-icon-area {
-    width: 170px;
-  }
 
-  /* Footer Section */
+  .regular-customers-icon-area {
+    flex: 0 0 calc(16.66% - 25px); 
+    max-width: 170px; 
+      }
+
+  /* Footer Section Desktop */
 
   .footer {
     display: flex;
@@ -1403,7 +1410,7 @@ img {
     width: 358px;
   }
 
-  /* Portfolio Page Section */
+  /* Portfolio Page Section Desktop */
 
   .filter-button-set {
     margin-bottom: 50px;
