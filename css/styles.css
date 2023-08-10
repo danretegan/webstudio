@@ -1347,13 +1347,6 @@ img {
     letter-spacing: 2.64px;
     line-height: 1.36;
   }
-
-
-
-
-
-
-
   
   /* ATTENTION TO DETAILS advertising Desktop Section */
 
@@ -1365,6 +1358,7 @@ img {
     justify-content: center;
     width: 1158px;
     margin: 0 auto;
+    padding-left: 45px;
   }
 
   .big-icon-area {
