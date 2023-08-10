@@ -49,12 +49,6 @@ img {
   width: 100%;
 }
 
-/* @media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-} */
-
 .section94px {
   margin: 60px 0;
 }
@@ -368,8 +362,6 @@ img {
   color: #fff;
 }
 
-
-
 /* What we do Section */
 
 .what-we-do-section {
@@ -393,7 +385,6 @@ img {
   justify-content: center;
   margin-bottom: 30px;
   width: 100%;
-  
 }
 
 .advertising-title {
@@ -531,9 +522,8 @@ img {
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex: 0 0 calc(50% - 30px); 
-  max-width: 210px; 
-
+  flex: 0 0 calc(50% - 30px);
+  max-width: 210px;
 }
 
 .regular-customers-icon-area:hover,
@@ -1070,7 +1060,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1157px;
+    width: 100%;
   }
   .header {
     height: 80px;
@@ -1137,15 +1127,15 @@ img {
   }
 
   /* ATTENTION TO DETAILS advertising Tablet Section*/
-  
+
   .big-icons-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    width: 768px;
+    max-width: 768px;
+    width: 100%;
   }
-
 
   .big-icon-area {
     width: 354px;
@@ -1160,10 +1150,6 @@ img {
     width: 354px;
     height: 75px;
   }
-
-
-
-
 
   /* Our Team Section Tablet */
 
@@ -1275,19 +1261,22 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
   }
   .section94px {
-    margin: 94px 0;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 
   /* Header Section Desktop */
 
   .header {
-
     width: 100%;
   }
   .header-container {
-    max-width: 1170px;
+    max-width: 1158px;
+    margin: 0 auto;
   }
   .header-text {
     align-items: center;
@@ -1359,7 +1348,39 @@ img {
     line-height: 1.36;
   }
 
+
+
+
+
+
+
   
+  /* ATTENTION TO DETAILS advertising Desktop Section */
+
+  .big-icons-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 1158px;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+
+  .big-icon-area {
+    height: 120px;
+    width: 265px;
+  }
+
+  .advertising-title {
+    text-align: left;
+  }
+
+  .advertising-text {
+    height: 75px;
+    width: 265px;
+  }
 
   /* What we do Section Desktop */
 
@@ -1425,9 +1446,9 @@ img {
   }
 
   .regular-customers-icon-area {
-    flex: 0 0 calc(16.66% - 25px); 
-    max-width: 170px; 
-       }
+    flex: 0 0 calc(16.66% - 25px);
+    max-width: 170px;
+  }
 
   /* Footer Section Desktop */
 
@@ -1496,8 +1517,6 @@ img {
     padding: 0;
     width: 1158px;
     margin: 0 auto;
-    /* margin-left: -30px; */
-    /* margin-right: -30px; */
   }
   .photo {
     height: auto;
