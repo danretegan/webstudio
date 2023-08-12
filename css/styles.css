@@ -230,9 +230,10 @@ img {
   color: var(--webstudio-color);
 }
 
-.active-page {
+.navigation-link.active-page {
   display: inline-block;
   position: relative;
+  color: var(--webstudio-color);
 }
 
 .active-page::after {
@@ -244,6 +245,7 @@ img {
   left: 0;
   position: absolute;
   width: 100%;
+  
 }
 
 .active:hover,
