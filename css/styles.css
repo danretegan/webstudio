@@ -182,12 +182,20 @@ img {
   text-decoration-line: none;
 }
 
+.drawer-phone:hover {
+  color: #188ce8;
+}
+
 .drawer-email {
   color: var(--text-contacts-color);
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.48px;
   text-decoration-line: none;
+}
+
+.drawer-email:hover {
+  color: #2f303a;
 }
 
 .drawer-social-links {
@@ -210,6 +218,10 @@ img {
   text-decoration-color: var(--webstudio-color);
 }
 
+.drawer-social-link:hover {
+  color: #757575;
+}
+
 .vertical-line {
   color: rgba(33, 33, 33, 0.2);
   margin-right: 10px;
@@ -229,6 +241,9 @@ img {
 .js-close-menu:focus {
   color: var(--webstudio-color);
 }
+
+
+
 
 .navigation-link.active-page {
   display: inline-block;
