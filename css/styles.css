@@ -537,20 +537,31 @@ img {
   border-radius: 4px;
   border: 1px solid var(--regular-customer-color);
   color: var(--regular-customer-color);
+  cursor: pointer;
   display: flex;
   height: 92px;
   justify-content: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex: 0 0 calc(50% - 30px);
   max-width: 210px;
-}
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .regular-customers-icon-area:hover,
 .regular-customers-icon-area:focus {
   color: var(--webstudio-color);
   border-color: var(--webstudio-color);
 }
+
+.regular-customers-icon {
+  color: var(--regular-customer-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-icon-area:hover .regular-customers-icon {
+  color: var(--webstudio-color);
+}
+
+
 
 /* Footer Section Mobile */
 
@@ -1200,8 +1211,7 @@ img {
     padding: 0;
   }
   .regular-customers-icon-area {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 226px;
   }
 
