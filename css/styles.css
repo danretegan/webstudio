@@ -75,7 +75,7 @@ img {
 }
 
 .logo-title {
-  margin: 0 0 0 15px;
+  margin: 0;
   padding: 0;
 }
 
@@ -246,8 +246,7 @@ img {
   color: var(--webstudio-color);
 }
 
-
-
+/* Navigation Section */
 
 .navigation-link.active-page {
   display: inline-block;
@@ -576,7 +575,7 @@ img {
 }
 
 .logo-title {
-  margin: 0 0 0 15px;
+  margin: 0;
 }
 
 .logo-footer span {
@@ -1273,6 +1272,7 @@ img {
   }
   .photo {
     height: auto;
+    /* width: 354px; */
     max-width: 354px;
   }
 }
