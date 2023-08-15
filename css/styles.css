@@ -389,43 +389,50 @@ img {
 
 /* ATTENTION TO DETAILS advertising Section Mobile */
 
-.big-icons-list {
-  margin: 0;
-  padding: 0;
-  margin: 0 auto;
-}
-
 .big-icon-area {
   align-items: center;
-  background-color: #f5f4fa;
+  background: #f5f4fa;
   border-radius: 4px;
   display: flex;
   height: 120px;
   justify-content: center;
-  margin-bottom: 30px;
   width: 100%;
 }
 
 .advertising-title {
-  color: var(--title-nav-color);
+  align-self: center;
+  color: #212121;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
-  margin: 0 0 10px 0;
+  line-height: normal;
   margin: 30px 0 10px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 270px;
 }
 
 .advertising-text {
-  color: var(--text-contacts-color);
+  color: #757575;
   font-size: 14px;
-  max-height: 50px;
-  height: auto;
+  height: 50px;
   letter-spacing: 0.42px;
-  line-height: 1.71;
-  margin: 0 0 30px 0;
+  line-height: 24px;
+  margin: 0;
   width: 100%;
+}
+
+.advertising-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-icons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
 }
 
 /* Our Team Section Mobile */
@@ -1163,27 +1170,28 @@ img {
 
   /* ATTENTION TO DETAILS advertising Tablet Section*/
 
-  .big-icons-list {
+  .big-icons-section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
-    max-width: 768px;
-    width: 100%;
   }
-
   .big-icon-area {
     width: 354px;
-    height: 120px;
   }
-
   .advertising-title {
+    align-self: flex-start;
     text-align: left;
   }
-
   .advertising-text {
-    width: 354px;
     height: 75px;
+    margin: 0;
+    width: 354px;
+  }
+  .big-icons-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 768px;
   }
 
   /* Our Team Section Tablet */
@@ -1387,26 +1395,18 @@ img {
 
   .big-icons-list {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 30px;
     justify-content: center;
     width: 1158px;
-    margin: 0 auto;
   }
 
-  .big-icon-area {
-    height: 120px;
-    width: 265px;
-  }
-
-  .advertising-title {
-    text-align: left;
-  }
-
+  .big-icon-area,
+  .advertising-title,
   .advertising-text {
-    height: 75px;
-    width: 265px;
+    max-width: 270px;
+    width: 100%;
   }
 
   /* What we do Section Desktop */
