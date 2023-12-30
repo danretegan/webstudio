@@ -35,7 +35,7 @@ img {
   max-width: 100%;
   height: auto;
 }
- 
+
 /*  Mobile First Design */
 /* Container general */
 
@@ -180,7 +180,7 @@ img {
 
 .drawer-phone {
   color: var(--webstudio-color);
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: 0.68px;
   text-decoration-line: none;
@@ -192,7 +192,7 @@ img {
 
 .drawer-email {
   color: var(--text-contacts-color);
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
   letter-spacing: 0.48px;
   text-decoration-line: none;
